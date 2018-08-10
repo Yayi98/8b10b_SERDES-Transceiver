@@ -58,7 +58,7 @@ begin
     sDataIn_p <= din_p;
     sDataIn_n <= din_n;
 
-    deserializer : entity work.deserializer
+    deserializer_inst : entity work.deserializer
     generic map (
         --kIDLY_TapWidth => kIDLY_TapWidth,
         OPWIDTH => kParallelWidth
@@ -72,7 +72,7 @@ begin
         reset      => reset
     );
 
-    decoder : entity work.dec_8b10b
+    decoder_inst : entity work.dec_8b10b
     port map (
         RESET => reset,
         RBYTECLK => clk,
