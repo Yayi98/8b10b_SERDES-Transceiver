@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------
---  prng.vhd
+--  prng32.vhd
 --	Pseudo Random Generators
 --	Version 1.0
 --
@@ -55,11 +55,14 @@ begin
         if rising_edge(clk) then
     	    if ce = '1' then
 
-    		    fb <= sr(31) xor sr(21) xor sr(1) xor sr(0);
-    		    sr <= sr(30 downto 0) & fb;
+    			fb <= sr(31) xor sr(21) xor sr(1) xor sr(0);
+    			sr <= sr(30 downto 0) & fb;
 
     	    end if;
-    	end if;
+    	else
+			fb <= fb;
+			sr <= sr;
+		end if;
     end if;
     end process;
 
