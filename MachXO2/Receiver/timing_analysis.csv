@@ -1,0 +1,73 @@
+Device Family,MachXO2
+Device,LCMXO2-1200HC
+Package,TQFP144
+Setup Performance Grade,Default
+Hold Performance Grade,Default
+Preference File,C:/lscc/diamond/3.10_x64/bin/nt64/prng_lsfrfib/Untitled.tpf
+Check Unconstrained Connections,No
+Check Unconstrained Paths,No
+Report Asynchronous Timing Loops,No
+Report Style,Verbose Timing Report
+Full Name,No
+Clock Domain,No
+Worst-Case Paths,10
+Number of Unconstrained Paths,0
+
+
+Preference,FREQUENCY PORT "sclk1" 100.000000 MHz 
+
+
+Preference,
+
+
+Delay Table
+
+Source,Destination,Weighted Slack,Arrival,Required,Data Delay,Route %,Levels,Clock Skew,Setup/Hold,Jitter,Color
+deserializer_inst,reg40_23__I_0_i4,-0.136,-0.136,0,1.107,64.7,1,-1.262,-0.019,0,
+deserializer_inst,reg40_23__I_0_i3,-0.108,-0.108,0,1.135,65.6,1,-1.262,-0.019,0,
+deserialize_proc.temp1_i1,reg40_23__I_0_i3,0.004,0.004,0,1.263,81.5,2,-1.316,-0.057,0,
+deserialize_proc.temp1_i2,reg40_7__I_0_i6,0.015,0.015,0,0.621,62.3,2,-0.663,-0.057,0,
+deserialize_proc.temp1_i0,reg40_23__I_0_i3,0.026,0.026,0,1.285,81.8,2,-1.316,-0.057,0,
+deserialize_proc.temp1_i0,reg40_7__I_0_i6,0.035,0.035,0,0.641,63.5,2,-0.663,-0.057,0,
+deserialize_proc.temp1_i2,reg40_23__I_0_i3,0.064,0.064,0,1.323,82.3,2,-1.316,-0.057,0,
+deserializer_inst,reg40_7__I_0_i4,0.067,0.067,0,0.715,45.3,1,-0.667,-0.019,0,
+deserializer_inst,reg40_7__I_0_i3,0.067,0.067,0,0.715,45.3,1,-0.667,-0.019,0,
+deserializer_inst,reg40_39__I_0_i7,0.113,0.113,0,1.498,73.9,1,-1.404,-0.019,0,
+
+
+Data Path Details
+
+Name,Fanout,Delay,Source,Destination,Resource
+C2INP_DEL,0,0.391,IOL_B11A.CLK,IOL_B11A.RXDA3,sdataIn_MGIOL
+ROUTE,5,0.716,IOL_B11A.RXDA3,R9C10B.M1,pdata2mux_3
+,,Total=1.107,,,
+
+
+Source Clock
+
+Name,Fanout,Delay,Source,Destination,Resource
+PADI_DEL,0,0.482,49.PAD,49.PADDI,sclk1
+ROUTE,1,0.362,49.PADDI,BECLKSYNC0.ECLKI,sclk1_c
+C2OUT_DEL,0,0,BECLKSYNC0.ECLKI,BECLKSYNC0.ECLKO,ECLKSYNCA_inst
+ROUTE,2,0,BECLKSYNC0.ECLKO,BCLKDIV0.CLKI,sclk
+CLKOUT_DEL,0,0.13,BCLKDIV0.CLKI,BCLKDIV0.CDIVX,clkdiv_inst
+ROUTE,10,0.688,BCLKDIV0.CDIVX,IOL_B11A.CLK,clkout_c
+,,Total=1.662,,,
+
+
+Destination Clock
+
+Name,Fanout,Delay,Source,Destination,Resource
+PADI_DEL,0,0.482,49.PAD,49.PADDI,sclk1
+ROUTE,1,0.362,49.PADDI,BECLKSYNC0.ECLKI,sclk1_c
+C2OUT_DEL,0,0,BECLKSYNC0.ECLKI,BECLKSYNC0.ECLKO,ECLKSYNCA_inst
+ROUTE,2,0,BECLKSYNC0.ECLKO,BCLKDIV0.CLKI,sclk
+CLKOUT_DEL,0,0.13,BCLKDIV0.CLKI,BCLKDIV0.CDIVX,clkdiv_inst
+ROUTE,10,0.634,BCLKDIV0.CDIVX,R7C11A.CLK,clkout_c
+REG_DEL,0,0.154,R7C11A.CLK,R7C11A.Q0,SLICE_0
+ROUTE,22,0.366,R7C11A.Q0,R7C10D.A1,deserialize_proc.temp1_0
+CTOF_DEL,0,0.177,R7C10D.A1,R7C10D.F1,SLICE_27
+ROUTE,4,0.619,R7C10D.F1,R9C10B.CLK,reg40_23__N_27
+,,Total=2.924,,,
+
+
