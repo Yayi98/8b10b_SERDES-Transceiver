@@ -1,0 +1,54 @@
+Device Family,MachXO2
+Device,LCMXO2-1200HC
+Package,TQFP144
+Setup Performance Grade,Default
+Hold Performance Grade,Default
+Preference File,C:/lscc/diamond/3.10_x64/bin/nt64/prng_lsfrfib/Untitled.tpf
+Check Unconstrained Connections,No
+Check Unconstrained Paths,No
+Report Asynchronous Timing Loops,No
+Report Style,Verbose Timing Report
+Full Name,No
+Clock Domain,No
+Worst-Case Paths,10
+Number of Unconstrained Paths,0
+
+
+Preference,
+
+
+Preference,
+
+
+Delay Table
+
+Source,Destination,Weighted Slack,Arrival,Required,Data Delay,Route %,Levels,Clock Skew,Setup/Hold,Jitter,Color
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+
+
+Data Path Details
+
+Name,Fanout,Delay,Source,Destination,Resource
+,,,,,
+,,,,,
+,,,,,
+
+
+Source Clock
+
+Name,Fanout,Delay,Source,Destination,Resource
+,,,,,
+,,,,,
+,,,,,
+
+
+Destination Clock
+
+Name,Fanout,Delay,Source,Destination,Resource
+,,,,,
+,,,,,
+,,,,,
+
+
