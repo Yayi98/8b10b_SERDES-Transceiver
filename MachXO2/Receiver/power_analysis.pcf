@@ -1,0 +1,390 @@
+[[Info]]
+_PARENT: none
+_FAMILY: xo2c00a
+_FILE_FORMAT: 1.00
+_DATA_VALUES: 1.00
+_STATUS: Advanced
+
+[[Project]]
+DesignName: deserializer8_1
+Family: MachXO2
+Device: LCMXO2-1200HC
+Package: TQFP144
+Operating: Commercial
+Version: 8.0
+Performance: -5
+PartName: LCMXO2-1200HC-5TG144C
+
+[[Settings]]
+EstimationMode: Medium
+ProcessType: Typical
+SoftwareMode: Calculation
+TempAmbX: Ambient Temperature
+SectionY: Total Power
+SectionX: Vcc
+SectionLowerLimit: 0.0000
+SectionUpperLimit: 0.0000
+SectionResolution: 0.0000
+TempAmbY: Ambient Temperature
+TempAmbLowerLimit: -30.0000
+TempAmbUpperLimit: 115.0000
+TempAmbResolution: 29.0000
+FreqY: Total Power
+FreqX: No Clocks Found!
+FreqLowerLimit: 10.0000
+FreqUpperLimit: 100.0000
+FreqAmbResolution: 20.0000
+PowerMode: Normal
+DisableBandgap: false
+DisablePor: false
+DisableDll: false
+DisableOsc: false
+DisablePLL0: false
+DisablePLL1: false
+DisableInRd0: false
+DisableInRd1: false
+DisableInRd2: false
+DisableInRd3: false
+DisableInRd4: false
+DisableInRd5: false
+DisableInRd6: false
+DisableInRd7: false
+EnablePg0: false
+EnablePg1: false
+EnablePg2: false
+EnablePg3: false
+EnablePg4: false
+EnablePg5: false
+EnablePg6: false
+EnablePg7: false
+DisableLVDS: false
+DisableLVDS1: false
+DisableLVDS2: false
+DisableLVDS3: false
+DisableLVDS4: false
+DisableLVDS5: false
+DisableLVDS6: false
+DisableLVDS7: false
+
+[[Thermal]]
+Airflow: 200 LFM
+AmbientTemperature: 25
+CustomThetaSA: -1
+JunctionTemperature: 25.23
+MaxSafeAmbient: 84.53
+ThetaBA: 10.0
+ThetaCS: 0
+ThetaEffective: 14.7
+ThetaJA: 20.59
+ThetaJB: 12.88
+ThetaJC: 0
+ThetaSA: -1
+UserThetaBA: No
+UserThetaCS: No
+UserThetaEffective: No
+UserThetaJA: No
+UserThetaJB: No
+UserThetaJC: No
+UserThetaSA: No
+thetaBoard: Medium Board
+thetaHeatSink: No Heat Sink
+thetaOption: ThermalModels
+
+[[VDPM]]
+Supply = Voltage, DPM
+Vcc = 3.300, 1.00
+Vccio 3.3 = 3.300, 1.00
+Vccio 2.5 = 2.500, 1.00
+Vccio 1.8 = 1.800, 1.00
+Vccio 1.5 = 1.500, 1.00
+Vccio 1.2 = 1.200, 1.00
+
+[[Logic]]
+Clk = F, AF, LUT, RAM, RIPPLE, REG, X0, X1, X2, X6, ISB, ISBLUT, ISBCE, ISBLSR, ISBM, ISBCLK
+COMBINATORIAL = 0.0000^d^, 10.0000^d^, 24, 0, 0, 0, 14, 11, 36, 6, 1, 1, 0, 0, 0, 0
+reg40_15__N_36 = 0.0000^d^, 10.0000^d^, 8, 0, 0, 8, 6, 4, 14, 3, 0, 0, 0, 0, 0, 4
+reg40_31__N_18 = 0.0000^d^, 10.0000^d^, 8, 0, 0, 8, 13, 10, 24, 1, 8, 0, 0, 8, 0, 5
+reg40_39__N_9 = 0.0000^d^, 10.0000^d^, 7, 0, 0, 8, 13, 9, 36, 2, 12, 0, 0, 12, 0, 5
+reg40_23__N_27 = 0.0000^d^, 10.0000^d^, 8, 0, 0, 8, 8, 7, 19, 2, 2, 2, 0, 0, 0, 4
+reg40_7__N_45 = 0.0000^d^, 10.0000^d^, 0, 0, 0, 8, 14, 4, 18, 3, 0, 0, 0, 0, 0, 4
+clkout_c = 0.0000^d^, 10.0000^d^, 16, 0, 0, 11, 14, 10, 47, 7, 179, 165, 0, 0, 14, 9
+sclk = 0.0000^d^, 10.0000^d^, 0, 0, 0, 0, 29, 15, 102, 8, 143, 81, 0, 20, 41, 4
+
+[[Clocks]]
+Clk = F, Duty, Pfeed, Ptrunk, Pspine, Ptap, Pbranch, Strunk, Sspine, Stap, Sbranch, Etb, Ebg, Elr
+clkout_c = 0.0000^d^, 100, 0, t6_1, s8_1, p10_1, c11_5, 0, 0, 0, b_0, 0, 0, 0
+sclk = 0.0000^d^, 100, 0, 0, 0, 0, 0, 0, 0, 0, b_0, t_1, 0, 0
+
+[[Input Output]]
+Clk = _Type, _Mode, F, AF, IP, OP, PG, Cload, Bank, _ActualMode, _Pull, X0, X1, X2, X6, ISB
+COMBINATORIAL = LVCMOS25, none, 0.0000^d^, 10.0000^d^, 2, 0, OFF, 5, 2, none, DOWN, 0, 0, 0, 0, 0
+clkout_c = LVCMOS25-8mA-SLEW:SLOW, none, 0.0000^d^, 10.0000^d^, 0, 9, N/A, 5, 2, none, DOWN, 0, 0, 0, 0, 0
+sclk = LVCMOS25, ddr, 0.0000^d^, 10.0000^d^, 1, 0, OFF, 5, 2, IDDR4, DOWN, 0, 0, 0, 0, 0
+
+[[Bidi]]
+ClkInpName = _Type, _Mode, InpF, InpAF, Bidi, PG, ClkOutName, OutF, OutAF, Duty, Cload, Bank, _ActualMode, _Pull, X0, X1, X2, X6, ISB
+
+[[Bank Voltage]]
+Bank = Voltage, InRD, LVDSO, PG
+0 = Vccio 2.5, No, No, N/A
+1 = Vccio 2.5, No, N/A, N/A
+2 = Vccio 2.5, No, N/A, OFF
+3 = Vccio 2.5, No, N/A, N/A
+
+[[Termination]]
+_Type = IP, OP, Bidi, Duty, Bank, Rth, Vth
+LVCMOS25 = 3, 0, 0, 0.0, 2, 1.0E12, 0
+LVCMOS25-8mA-SLEW:SLOW = 0, 9, 0, 0.0, 2, 1.0E12, 0
+
+[[I2C1]]
+Clk = F, AF, I2C1
+
+[[I2C2]]
+Clk = F, AF, I2C2
+
+[[SPI]]
+Clk = F, AF, SPI
+
+[[TC]]
+Clk = F, AF, TC, WBUSED
+
+[[UFM]]
+Clk = F, AF, UFM
+
+[[WISHBONE]]
+Clk = F, AF, WISHBONE
+
+[[CLKDIV]]
+Clk = F, AF, CLKDIV
+sclk = 0.0000^d^, 100.0000^d^, 1
+
+[[CIBTEST]]
+CIBTEST = 
+0 = 
+
+[[MCLK]]
+STANDBY = Clk, F, AF, MCLK, MCLKF, SEDF
+No = _CLKNAME, 266.0000, 100.0000, 1, 2.0800, 2.0800
+
+[[POR]]
+STANDBY = 
+No = 
+
+[[BANDGAP]]
+STANDBY = 
+No = 
+
+[[JTAG]]
+Clk = F, AF, Input, Output
+COMBINATORIAL = 25.0000, 100.0000, 3, 1
+
+[[SED]]
+_Mode = SED, STATUS
+SEDFA = 0, Disabled
+
+[[SP RAM]]
+Clk = EBR, F, AF, _Type, X0, X1, X2, X6, ISB
+
+[[DP RAM]]
+RdClk = RdF, RdAF, EBR, WrClk, WrF, WrAF, _TypeA, _TypeB, X0, X1, X2, X6, ISB
+
+[[DP RAM True]]
+ClkA = aF, aAF, EBR, ClkB, bF, bAF, _TypeA, _TypeB, X0, X1, X2, X6, ISB
+
+[[FIFO DC]]
+RdClk = RdF, RdAF, EBR, WrClk, WrF, WrAF, _TypeA, _TypeB, X0, X1, X2, X6, ISB
+
+[[PLL]]
+OutClk = inF, N, V, M, PLL, STANDBY
+
+[[DQSDLL]]
+Clk = F, DQSDLL
+
+[[DQS]]
+Clk = F, DQS
+
+[[DLLDEL]]
+Clk = F, DLLDEL
+
+[[PLL Clock]]
+Out = In
+
+[[Connections]]
+Clock = Comp, Type
+COMBINATORIAL = i1283/SLICE_28, 0
+reg40_15__N_36 = SLICE_43, 0
+reg40_31__N_18 = SLICE_40, 0
+reg40_39__N_9 = SLICE_26, 0
+reg40_23__N_27 = SLICE_41, 0
+reg40_7__N_45 = SLICE_55, 0
+clkout_c = SLICE_0, 0
+clkout_c = pdataOut[0], 1
+clkout_c = pdataOut[1], 1
+clkout_c = pdataOut[2], 1
+clkout_c = pdataOut[3], 1
+clkout_c = pdataOut[4], 1
+clkout_c = pdataOut[5], 1
+clkout_c = pdataOut[6], 1
+clkout_c = pdataOut[7], 1
+clkout_c = clkout, 1
+sclk = sdataIn_MGIOL, 0
+
+[[Hierarchical Connections]]
+Key = Name, Type
+SIGNAL = COMBINATORIAL, DUMMY
+INPUT = i1283/SLICE_28, SLICE
+INPUT = i1281/SLICE_29, SLICE
+INPUT = i1279/SLICE_30, SLICE
+INPUT = i1275/SLICE_31, SLICE
+INPUT = i1273/SLICE_32, SLICE
+INPUT = i1271/SLICE_33, SLICE
+INPUT = i1269/SLICE_34, SLICE
+INPUT = i1265/SLICE_35, SLICE
+INPUT = i1263/SLICE_36, SLICE
+INPUT = decoder_inst/i1267/SLICE_37, SLICE
+INPUT = decoder_inst/i1286/SLICE_38, SLICE
+INPUT = i1261/SLICE_39, SLICE
+INPUT = sclk1, PIO
+INPUT = reset, PIO
+INPUT = ECLKSYNCA_inst, ECLKSYNC
+INPUT = GSR_INST, GSR
+SIGNAL = reg40_15__N_36, DUMMY
+OUTPUT = SLICE_43, SLICE
+OUTPORT = decoder_inst/n1283, F0
+OUTPORT = reg40_10, Q0
+OUTPORT = decoder_inst/OR122_N_121, F1
+OUTPORT = reg40_11, Q1
+OUTPUT = SLICE_44, SLICE
+OUTPORT = decoder_inst/n1204, F0
+OUTPORT = reg40_12, Q0
+OUTPORT = decoder_inst/n19, F1
+OUTPORT = reg40_13, Q1
+OUTPUT = SLICE_47, SLICE
+OUTPORT = decoder_inst/n1171, F0
+OUTPORT = reg40_14, Q0
+OUTPORT = decoder_inst/n1162, F1
+OUTPORT = reg40_15, Q1
+OUTPUT = SLICE_53, SLICE
+OUTPORT = decoder_inst/P22_N_82, F0
+OUTPORT = reg40_8, Q0
+OUTPORT = decoder_inst/OR127, F1
+OUTPORT = reg40_9, Q1
+SIGNAL = reg40_31__N_18, DUMMY
+OUTPUT = SLICE_40, SLICE
+OUTPORT = decoder_inst/OR123_N_126, F0
+OUTPORT = reg40_24, Q0
+OUTPORT = decoder_inst/P13, F1
+OUTPORT = reg40_25, Q1
+OUTPUT = SLICE_45, SLICE
+OUTPORT = decoder_inst/n957, F0
+OUTPORT = reg40_28, Q0
+OUTPORT = decoder_inst/IOR134, F1
+OUTPORT = reg40_29, Q1
+OUTPUT = SLICE_46, SLICE
+OUTPORT = decoder_inst/n1155, F0
+OUTPORT = reg40_26, Q0
+OUTPORT = decoder_inst/n1177, F1
+OUTPORT = reg40_27, Q1
+OUTPUT = SLICE_52, SLICE
+OUTPORT = n792, F0
+OUTPORT = reg40_30, Q0
+OUTPORT = n793, F1
+OUTPORT = reg40_31, Q1
+SIGNAL = reg40_39__N_9, DUMMY
+OUTPUT = SLICE_26, SLICE
+OUTPORT = VCC_net, F0
+OUTPORT = reg40_38, Q0
+OUTPORT = reg40_39, Q1
+OUTPUT = SLICE_49, SLICE
+OUTPORT = reg40_31__N_18, F0
+OUTPORT = reg40_36, Q0
+OUTPORT = n686, F1
+OUTPORT = reg40_37, Q1
+OUTPUT = SLICE_50, SLICE
+OUTPORT = n661, F0
+OUTPORT = reg40_32, Q0
+OUTPORT = reg40_15__N_36, F1
+OUTPORT = reg40_33, Q1
+OUTPUT = SLICE_51, SLICE
+OUTPORT = reg40_39__N_9, F0
+OUTPORT = reg40_34, Q0
+OUTPORT = n1332, F1
+OUTPORT = reg40_35, Q1
+SIGNAL = reg40_23__N_27, DUMMY
+OUTPUT = SLICE_41, SLICE
+OUTPORT = decoder_inst/n780, F0
+OUTPORT = reg40_20, Q0
+OUTPORT = decoder_inst/n1187, F1
+OUTPORT = reg40_21, Q1
+OUTPUT = SLICE_42, SLICE
+OUTPORT = decoder_inst/n4, F0
+OUTPORT = reg40_18, Q0
+OUTPORT = decoder_inst/n749, F1
+OUTPORT = reg40_19, Q1
+OUTPUT = SLICE_48, SLICE
+OUTPORT = decoder_inst/n27, F0
+OUTPORT = reg40_22, Q0
+OUTPORT = decoder_inst/n1186, F1
+OUTPORT = reg40_23, Q1
+OUTPUT = SLICE_54, SLICE
+OUTPORT = decoder_inst/n4_adj_167, F0
+OUTPORT = reg40_16, Q0
+OUTPORT = decoder_inst/n30, F1
+OUTPORT = reg40_17, Q1
+SIGNAL = reg40_7__N_45, DUMMY
+OUTPUT = SLICE_55, SLICE
+OUTPORT = reg40_1, Q0
+OUTPORT = reg40_0, Q1
+OUTPUT = SLICE_56, SLICE
+OUTPORT = reg40_3, Q0
+OUTPORT = reg40_2, Q1
+OUTPUT = SLICE_57, SLICE
+OUTPORT = reg40_5, Q0
+OUTPORT = reg40_4, Q1
+OUTPUT = SLICE_58, SLICE
+OUTPORT = reg40_7, Q0
+OUTPORT = reg40_6, Q1
+SIGNAL = clkout_c, DUMMY
+OUTPUT = SLICE_0, SLICE
+OUTPORT = deserialize_proc.temp1_2_N_46_0, F0
+OUTPORT = deserialize_proc.temp1_0, Q0
+OUTPORT = deserialize_proc.temp1_2_N_46_1, F1
+OUTPORT = deserialize_proc.temp1_1, Q1
+OUTPUT = decoder_inst/SLICE_1, SLICE
+OUTPORT = decoder_inst/AO_N_64, F0
+OUTPORT = pdataOut_c_0, Q0
+OUTPORT = decoder_inst/BO_N_63, F1
+OUTPORT = pdataOut_c_1, Q1
+OUTPUT = pdataOut[0], PIO
+OUTPUT = pdataOut[1], PIO
+OUTPUT = decoder_inst/SLICE_2, SLICE
+OUTPORT = decoder_inst/CO_N_62, F0
+OUTPORT = pdataOut_c_2, Q0
+OUTPORT = decoder_inst/DO_N_61, F1
+OUTPORT = pdataOut_c_3, Q1
+OUTPUT = pdataOut[2], PIO
+OUTPUT = pdataOut[3], PIO
+OUTPUT = decoder_inst/SLICE_3, SLICE
+OUTPORT = decoder_inst/EO_N_60, F0
+OUTPORT = pdataOut_c_4, Q0
+OUTPORT = decoder_inst/n24, F1
+OUTPUT = pdataOut[4], PIO
+OUTPUT = decoder_inst/SLICE_4, SLICE
+OUTPORT = decoder_inst/FO_N_59, OFX0
+OUTPORT = pdataOut_c_5, Q0
+OUTPUT = pdataOut[5], PIO
+OUTPUT = decoder_inst/SLICE_5, SLICE
+OUTPORT = decoder_inst/GO_N_58, OFX0
+OUTPORT = pdataOut_c_6, Q0
+OUTPUT = pdataOut[6], PIO
+OUTPUT = decoder_inst/SLICE_6, SLICE
+OUTPORT = decoder_inst/HO_N_57, OFX0
+OUTPORT = pdataOut_c_7, Q0
+OUTPUT = pdataOut[7], PIO
+OUTPUT = SLICE_27, SLICE
+OUTPORT = deserialize_proc.temp1_2_N_46_2, F0
+OUTPORT = reg40_7__N_45, Q0
+OUTPORT = reg40_23__N_27, F1
+OUTPUT = clkout, PIO
+SIGNAL = sclk, DUMMY
+
