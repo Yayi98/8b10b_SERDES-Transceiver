@@ -1,0 +1,61 @@
+Device Family,MachXO2
+Device,LCMXO2-1200HC
+Package,TQFP144
+Setup Performance Grade,Default
+Hold Performance Grade,Default
+Preference File,C:/lscc/diamond/3.10_x64/bin/nt64/prng_lsfrfib/Untitled.tpf
+Check Unconstrained Connections,No
+Check Unconstrained Paths,No
+Report Asynchronous Timing Loops,No
+Report Style,Verbose Timing Report
+Full Name,No
+Clock Domain,No
+Worst-Case Paths,10
+Number of Unconstrained Paths,0
+
+
+Preference,FREQUENCY NET "clk" 40.584500 MHz 
+
+
+Preference,
+
+
+Delay Table
+
+Source,Destination,Weighted Slack,Arrival,Required,Data Delay,Route %,Levels,Clock Skew,Setup/Hold,Jitter,Color
+prng_inst/sr_i21,prng_inst/sr_i21,0.379,0.379,0,0.366,36.1,2,0,-0.013,0,
+prng_inst/sr_i9,prng_inst/sr_i9,0.379,0.379,0,0.366,36.1,2,0,-0.013,0,
+prng_inst/sr_i2,prng_inst/sr_i2,0.379,0.379,0,0.366,36.1,2,0,-0.013,0,
+prng_inst/sr_i11,prng_inst/sr_i11,0.379,0.379,0,0.366,36.1,2,0,-0.013,0,
+prng_inst/sr_i17,prng_inst/sr_i17,0.379,0.379,0,0.366,36.1,2,0,-0.013,0,
+prng_inst/sr_i10,prng_inst/sr_i10,0.379,0.379,0,0.366,36.1,2,0,-0.013,0,
+prng_inst/sr_i8,prng_inst/sr_i8,0.379,0.379,0,0.366,36.1,2,0,-0.013,0,
+prng_inst/sr_i20,prng_inst/sr_i20,0.379,0.379,0,0.366,36.1,2,0,-0.013,0,
+prng_inst/sr_i5,prng_inst/sr_i5,0.379,0.379,0,0.366,36.1,2,0,-0.013,0,
+prng_inst/sr_i16,prng_inst/sr_i16,0.379,0.379,0,0.366,36.1,2,0,-0.013,0,
+
+
+Data Path Details
+
+Name,Fanout,Delay,Source,Destination,Resource
+REG_DEL,0,0.133,R7C15D.CLK,R7C15D.Q1,prng_inst/SLICE_65
+ROUTE,3,0.132,R7C15D.Q1,R7C15D.A1,prng_inst/rng_21
+CTOF_DEL,0,0.101,R7C15D.A1,R7C15D.F1,prng_inst/SLICE_65
+ROUTE,1,0,R7C15D.F1,R7C15D.DI1,prng_inst/rng_31_N_77_21
+,,Total=0.366,,,
+
+
+Source Clock
+
+Name,Fanout,Delay,Source,Destination,Resource
+ROUTE,53,0.644,TCLKDIV0.CDIVX,R7C15D.CLK,clk
+,,Total=0.644,,,
+
+
+Destination Clock
+
+Name,Fanout,Delay,Source,Destination,Resource
+ROUTE,53,0.644,TCLKDIV0.CDIVX,R7C15D.CLK,clk
+,,Total=0.644,,,
+
+
