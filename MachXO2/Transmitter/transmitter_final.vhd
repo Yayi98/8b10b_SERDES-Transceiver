@@ -273,7 +273,7 @@ begin
         end case;
     end process;
 
-    serialize_proc : process(fclk, regdiv1, regdiv2, regdiv3, regdiv4)
+    mux_proc : process(fclk, regdiv1, regdiv2, regdiv3, regdiv4)
     begin
         if regdiv1 = '1' then
             pdataIn <= reg40 (39 downto 32);
