@@ -8,10 +8,10 @@ Starting: "prj_run Export -impl impl1"
 ibisgen "receiver_eval3_impl1.pad" "C:/lscc/diamond/3.10_x64/cae_library/ibis/machxo2.ibs" 
 IBIS Models Generator: Lattice Diamond (64-bit) 3.10.2.115
 
-Sun Aug 12 01:19:47 2018
+Sun Aug 12 01:32:39 2018
 
 Comp: clkout
- Site: 9
+ Site: 65
  Type: OUT
  IO_TYPE=LVCMOS25 
  DRIVE=8mA 
@@ -35,7 +35,7 @@ Comp: pdataOut[1]
  SLEW=SLOW 
 -----------------------
 Comp: pdataOut[2]
- Site: 47
+ Site: 43
  Type: OUT
  IO_TYPE=LVCMOS25 
  DRIVE=8mA 
@@ -43,14 +43,6 @@ Comp: pdataOut[2]
  SLEW=SLOW 
 -----------------------
 Comp: pdataOut[3]
- Site: 57
- Type: OUT
- IO_TYPE=LVCMOS25 
- DRIVE=8mA 
- PULL=DOWN 
- SLEW=SLOW 
------------------------
-Comp: pdataOut[4]
  Site: 50
  Type: OUT
  IO_TYPE=LVCMOS25 
@@ -58,7 +50,7 @@ Comp: pdataOut[4]
  PULL=DOWN 
  SLEW=SLOW 
 -----------------------
-Comp: pdataOut[5]
+Comp: pdataOut[4]
  Site: 59
  Type: OUT
  IO_TYPE=LVCMOS25 
@@ -66,8 +58,16 @@ Comp: pdataOut[5]
  PULL=DOWN 
  SLEW=SLOW 
 -----------------------
+Comp: pdataOut[5]
+ Site: 42
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
 Comp: pdataOut[6]
- Site: 58
+ Site: 48
  Type: OUT
  IO_TYPE=LVCMOS25 
  DRIVE=8mA 
@@ -75,7 +75,7 @@ Comp: pdataOut[6]
  SLEW=SLOW 
 -----------------------
 Comp: pdataOut[7]
- Site: 60
+ Site: 47
  Type: OUT
  IO_TYPE=LVCMOS25 
  DRIVE=8mA 
@@ -83,7 +83,7 @@ Comp: pdataOut[7]
  SLEW=SLOW 
 -----------------------
 Comp: reset
- Site: 41
+ Site: 44
  Type: IN
  IO_TYPE=LVCMOS25 
  PULL=DOWN 
